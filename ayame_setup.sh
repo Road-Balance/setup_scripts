@@ -35,7 +35,7 @@ fi
 echo -e "\n\x1b[36m\x1b[1mayame 및 ayame-web-sdk-sample을 설치할 디렉토리를 입력해주세요:\x1b[0m"
 read TD && echo -e "\n" && sleep 2s
 
-cd ${TD}
+cd "${TD/#~/$HOME}"
 git clone http://github.com/OpenAyame/ayame
 git clone http://github.com/OpenAyame/ayame-web-sdk-samples
 
