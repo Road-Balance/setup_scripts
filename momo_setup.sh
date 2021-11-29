@@ -2,15 +2,6 @@
 
 pwd=$PWD
 
-# 기존에 빌드된 momo를 클론
-echo -e "\n\x1b[36m\x1b[1mmomo를 설치할 디렉토리를 입력해주세요:\x1b[0m"
-read MOMOD && sleep 1s
-if [ ! -d "${MOMOD/#~/$HOME}/momo_prebuilt" ]; then
-	cd "${MOMOD/#~/$HOME}"
-	git clone https://github.com/Road-Balance/momo_prebuilt.git
-fi
-cd $pwd
-
 # go 및 go 설치를 위한 snap(버전 컨트롤) 설치
 if [ -z "$(whereis go | grep -oP '(?<=: ).*[^ ]')" ] || [ $(go version | grep -oP '(?<=go1.).?[^.]') -lt 15 ]
 then
