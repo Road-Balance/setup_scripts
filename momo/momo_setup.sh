@@ -2,14 +2,16 @@
 
 pwd=$PWD
 
+# 기존에 빌드된 momo를 클론
 echo -e "\n\x1b[36m\x1b[1mmomo를 설치할 디렉토리를 입력해주세요:\x1b[0m"
 read MOMOD && sleep 1s
 if [ ! -d "${MOMOD/#~/$HOME}/momo_prebuilt" ]; then
 	cd "${MOMOD/#~/$HOME}"
-	git clone https://github.com/mt-chilgab/momo_prebuilt.git
+	git clone https://github.com/Road-Balance/momo_prebuilt.git
 fi
 cd $pwd
 
+# go 및 go 설치를 위한 snap(버전 컨트롤) 설치
 if [ -z "$(whereis go | grep -oP '(?<=: ).*[^ ]')" ] || [ $(go version | grep -oP '(?<=go1.).?[^.]') -lt 15 ]
 then
 	echo -e "\n\x1b[36m\x1b[1msnap 및 go(>=1.15)를 설치합니다.\x1b[0m\n"
@@ -19,6 +21,7 @@ then
 	sudo snap install --classic go
 fi
 
+# node.js 설치
 if [ -z "$(whereis node | grep -oP '(?<=: ).*[^ ]')" ]; then
 	
 	echo -e "\n\x1b[36m\x1b[1mnode.js를 /opt에 설치합니다.\x1b[0m\n"
@@ -31,6 +34,7 @@ if [ -z "$(whereis node | grep -oP '(?<=: ).*[^ ]')" ]; then
 	cd $pwd
 fi
 
+# node.js 패키지 매니저인 yarn 설치
 if [ -z "$(whereis yarn | grep -oP '(?<=: ).*[^ ]')" ]; then
 	
 	echo -e "\n\x1b[36m\x1b[1myarn을 설치합니다.\x1b[0m\n"
@@ -44,6 +48,7 @@ if [ -z "$(whereis yarn | grep -oP '(?<=: ).*[^ ]')" ]; then
 	sudo apt-get update && sudo apt-get -y install yarn
 fi
 
+# ayame 및 ayame SDK 예제를 클론
 echo -e "\n\x1b[36m\x1b[1mayame 및 ayame-web-sdk-sample을 설치할 디렉토리를 입력해주세요:\x1b[0m"
 read TD && sleep 1s
 if [ ! -d "${TD/#~/$HOME}/ayame" ]; then
@@ -56,11 +61,14 @@ if [ ! -d "${TD/#~/$HOME}/ayame-web-sdk-samples" ]; then
 	git clone http://github.com/OpenAyame/ayame-web-sdk-samples
 fi
 
+# ayame 사용을 위한 초기화 과정
 cd ayame
 make && make init
 
+# ayame SDK 예제 사용을 위한 초기화 과정
 cd ayame-web-sdk-samples
 yarn install
 
+# 처음 폴더로 복귀 및 종료
 cd $pwd
 echo -e "\n\x1b[36m\x1b[1m완료.\x1b[0m\n"
