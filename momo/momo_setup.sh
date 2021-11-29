@@ -4,9 +4,10 @@ pwd=$PWD
 
 echo -e "\n\x1b[36m\x1b[1mmomo를 설치할 디렉토리를 입력해주세요:\x1b[0m"
 read MOMOD && sleep 1s
-cd "${MOMOD/#~/$HOME}"
-git clone https://github.com/mt-chilgab/momo_prebuilt.git
-
+if [ ! -d "${MOMOD/#~/$HOME}/momo_prebuilt" ]; then
+	cd "${MOMOD/#~/$HOME}"
+	git clone https://github.com/mt-chilgab/momo_prebuilt.git
+fi
 cd $pwd
 
 if [ -z "$(whereis go | grep -oP '(?<=: ).*[^ ]')" ] || [ $(go version | grep -oP '(?<=go1.).?[^.]') -lt 15 ]
@@ -45,10 +46,15 @@ fi
 
 echo -e "\n\x1b[36m\x1b[1mayame 및 ayame-web-sdk-sample을 설치할 디렉토리를 입력해주세요:\x1b[0m"
 read TD && sleep 1s
+if [ ! -d "${TD/#~/$HOME}/ayame" ]; then
+	cd "${TD/#~/$HOME}"
+	git clone http://github.com/OpenAyame/ayame
+fi
 
-cd "${TD/#~/$HOME}"
-git clone http://github.com/OpenAyame/ayame
-git clone http://github.com/OpenAyame/ayame-web-sdk-samples
+if [ ! -d "${TD/#~/$HOME}/ayame-web-sdk-samples" ]; then
+	cd "${TD/#~/$HOME}"
+	git clone http://github.com/OpenAyame/ayame-web-sdk-samples
+fi
 
 cd ayame
 make && make init
