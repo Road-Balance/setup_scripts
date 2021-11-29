@@ -1,0 +1,60 @@
+[000:000][10257] (v4l2_video_capturer.cpp:76): GetDeviceName(0): device_name=HD USB CAMERA, unique_name=usb-70090000.xusb-2.4
+[000:003][10257] (v4l2_video_capturer.cpp:230): Video Capture enumerats supported image formats:
+[000:003][10257] (v4l2_video_capturer.cpp:232):   { pixelformat = MJPG, description = 'caab860c' }
+[000:003][10257] (v4l2_video_capturer.cpp:232):   { pixelformat = YUYV, description = 'caab860c' }
+[000:003][10257] (v4l2_video_capturer.cpp:248): We prefer format MJPG
+[000:096][10257] (jetson_v4l2_capturer.cpp:29): Get Capture
+[000:218][10261] (audio_device_buffer.cc:64): AudioDeviceBuffer::ctor
+[000:218][10261] (audio_device_impl.cc:136): current platform is Linux
+[000:218][10261] (audio_device_impl.cc:155): CreatePlatformSpecificObjects
+[000:218][10261] (audio_device_impl.cc:947): PlatformAudioLayer
+[000:218][10261] (audio_device_impl.cc:266): PulseAudio support is enabled.
+[000:218][10261] (audio_device_impl.cc:299): Dummy Audio APIs will be utilized.
+[000:218][10261] (audio_device_impl.cc:312): AttachAudioBuffer
+[000:335][10257] (audio_processing_impl.cc:281): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[000:335][10257] (audio_processing_impl.cc:290): Denormal disabler: supported
+[000:336][10257] (webrtc_voice_engine.cc:314): WebRtcVoiceEngine::WebRtcVoiceEngine
+[000:336][10261] (webrtc_voice_engine.cc:336): WebRtcVoiceEngine::Init
+[000:337][10261] (audio_device_impl.cc:332): Init
+[000:337][10261] (audio_device_impl.cc:676): SetPlayoutDevice(0)
+[000:337][10261] (adm_helpers.cc:44): Unable to set playout device.
+[000:337][10261] (audio_device_impl.cc:851): RegisterAudioCallback
+[000:337][10261] (webrtc_voice_engine.cc:432): WebRtcVoiceEngine::ApplyOptions: AudioOptions {aec: 1, agc: 1, ns: 1, hf: 1, swap: 0, audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, typing: 1, experimental_agc: 0, experimental_ns: 0, residual_echo_detector: 1, }
+[000:337][10261] (audio_device_impl.cc:867): BuiltInAECIsAvailable
+[000:337][10261] (audio_device_generic.cc:18): BuiltInAECIsAvailable: Not supported on this platform
+[000:337][10261] (audio_device_impl.cc:870): output: 0
+[000:337][10261] (audio_device_impl.cc:883): BuiltInAGCIsAvailable
+[000:337][10261] (audio_device_generic.cc:28): BuiltInAGCIsAvailable: Not supported on this platform
+[000:337][10261] (audio_device_impl.cc:886): output: 0
+[000:337][10261] (audio_device_impl.cc:899): BuiltInNSIsAvailable
+[000:337][10261] (audio_device_generic.cc:38): BuiltInNSIsAvailable: Not supported on this platform
+[000:337][10261] (audio_device_impl.cc:902): output: 0
+[000:337][10261] (webrtc_voice_engine.cc:541): Stereo swapping enabled? 0
+[000:337][10261] (webrtc_voice_engine.cc:546): NetEq capacity is 200
+[000:337][10261] (webrtc_voice_engine.cc:552): NetEq fast mode? 0
+[000:337][10261] (webrtc_voice_engine.cc:558): NetEq minimum delay is 0
+[000:337][10261] (webrtc_voice_engine.cc:564): NetEq handle reordered packets? 0
+[000:337][10261] (webrtc_voice_engine.cc:584): Experimental ns is enabled? 0
+[000:337][10261] (webrtc_voice_engine.cc:635): NS set to 1
+[000:337][10261] (webrtc_voice_engine.cc:639): Typing detection is enabled? 1
+[000:337][10261] (audio_processing_impl.cc:539): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 1 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, noise_estimator: NoiseFloor, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50, sse2_allowed: 1, avx2_allowed: 1, neon_allowed: 1}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[000:338][10261] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[000:339][10261] (echo_canceller3.cc:749): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[000:339][10261] (clipping_predictor.cc:357): [agc] Clipping prediction disabled.
+[000:339][10261] (agc_manager_direct.cc:69): [agc] GetMinMicLevel
+[000:339][10261] (agc_manager_direct.cc:73): [agc] Using default min mic level: 12
+[045:555][10261] (thread.cc:715): Message to Thread 0x0x1cd4df60 took 38ms to dispatch. Posted from: PostTask@../../../_source/ubuntu-18.04_armv8/webrtc/src/rtc_base/thread.cc:1104
+[045:637][10261] (webrtc_voice_engine.cc:322): WebRtcVoiceEngine::~WebRtcVoiceEngine
+[045:638][10261] (audio_device_impl.cc:802): StopPlayout
+[045:638][10261] (audio_device_impl.cc:806): output: 0
+[045:638][10261] (audio_device_impl.cc:833): StopRecording
+[045:638][10261] (audio_device_impl.cc:837): output: 0
+[045:638][10261] (audio_device_impl.cc:851): RegisterAudioCallback
+[045:638][10261] (audio_device_impl.cc:349): Terminate
+[045:638][10261] (audio_device_impl.cc:318): ~AudioDeviceModuleImpl
+[045:638][10261] (audio_device_buffer.cc:75): AudioDeviceBuffer::~dtor

@@ -1,0 +1,396 @@
+The target system is: Linux -  - aarch64
+The host system is: Linux - 5.4.0-89-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /root/llvm/clang/bin/clang 
+Build flags: 
+Id flags: -c;--target=aarch64-linux-gnu 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is Clang, found in "/root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/3.21.3/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /root/llvm/clang/bin/clang++ 
+Build flags: 
+Id flags: -c;--target=aarch64-linux-gnu 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is Clang, found in "/root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/3.21.3/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e4657/fast && /usr/bin/make  -f CMakeFiles/cmTC_e4657.dir/build.make CMakeFiles/cmTC_e4657.dir/build
+make[1]: Entering directory '/root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e4657.dir/CMakeCCompilerABI.c.o
+/root/llvm/clang/bin/clang --target=aarch64-linux-gnu --sysroot=/root/rootfs   -v -MD -MT CMakeFiles/cmTC_e4657.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_e4657.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_e4657.dir/CMakeCCompilerABI.c.o -c /root/cmake/share/cmake-3.21/Modules/CMakeCCompilerABI.c
+clang version 14.0.0 (https://github.com/llvm/llvm-project/ b5e470aa2e978a0ee6276b9564f85cf170ae260d)
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /root/llvm/clang/bin
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/7
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/7.3.0
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/8
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/8.0.1
+Selected GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/root/llvm/clang/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=non-leaf -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu generic -target-feature +neon -target-abi aapcs -fallow-half-arguments-and-returns -debugger-tuning=gdb -v -fcoverage-compilation-dir=/root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp -resource-dir /root/llvm/clang/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_e4657.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_e4657.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /root/rootfs -internal-isystem /root/llvm/clang/lib/clang/14.0.0/include -internal-isystem /root/rootfs/usr/local/include -internal-isystem /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../aarch64-linux-gnu/include -internal-externc-isystem /root/rootfs/usr/include/aarch64-linux-gnu -internal-externc-isystem /root/rootfs/include -internal-externc-isystem /root/rootfs/usr/include -fdebug-compilation-dir=/root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e4657.dir/CMakeCCompilerABI.c.o -x c /root/cmake/share/cmake-3.21/Modules/CMakeCCompilerABI.c
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/root/rootfs/usr/local/include"
+ignoring nonexistent directory "/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../aarch64-linux-gnu/include"
+ignoring nonexistent directory "/root/rootfs/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /root/llvm/clang/lib/clang/14.0.0/include
+ /root/rootfs/usr/include/aarch64-linux-gnu
+ /root/rootfs/usr/include
+End of search list.
+Linking C executable cmTC_e4657
+/root/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4657.dir/link.txt --verbose=1
+/root/llvm/clang/bin/clang --target=aarch64-linux-gnu --sysroot=/root/rootfs  -v CMakeFiles/cmTC_e4657.dir/CMakeCCompilerABI.c.o -o cmTC_e4657 
+clang version 14.0.0 (https://github.com/llvm/llvm-project/ b5e470aa2e978a0ee6276b9564f85cf170ae260d)
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /root/llvm/clang/bin
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/7
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/7.3.0
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/8
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/8.0.1
+Selected GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/usr/bin/aarch64-linux-gnu-ld" --sysroot=/root/rootfs -EL -z relro --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /lib/ld-linux-aarch64.so.1 -o cmTC_e4657 /root/rootfs/usr/lib/aarch64-linux-gnu/crt1.o /root/rootfs/usr/lib/aarch64-linux-gnu/crti.o /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/crtbegin.o -L/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0 -L/root/rootfs/lib/aarch64-linux-gnu -L/root/rootfs/lib/../lib64 -L/root/rootfs/usr/lib/aarch64-linux-gnu -L/root/rootfs/lib -L/root/rootfs/usr/lib CMakeFiles/cmTC_e4657.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/crtend.o /root/rootfs/usr/lib/aarch64-linux-gnu/crtn.o
+make[1]: Leaving directory '/root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/root/llvm/clang/lib/clang/14.0.0/include]
+    add: [/root/rootfs/usr/include/aarch64-linux-gnu]
+    add: [/root/rootfs/usr/include]
+  end of search list found
+  collapse include dir [/root/llvm/clang/lib/clang/14.0.0/include] ==> [/root/llvm/clang/lib/clang/14.0.0/include]
+  collapse include dir [/root/rootfs/usr/include/aarch64-linux-gnu] ==> [/root/rootfs/usr/include/aarch64-linux-gnu]
+  collapse include dir [/root/rootfs/usr/include] ==> [/root/rootfs/usr/include]
+  implicit include dirs: [/root/llvm/clang/lib/clang/14.0.0/include;/root/rootfs/usr/include/aarch64-linux-gnu;/root/rootfs/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_e4657/fast && /usr/bin/make  -f CMakeFiles/cmTC_e4657.dir/build.make CMakeFiles/cmTC_e4657.dir/build]
+  ignore line: [make[1]: Entering directory '/root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_e4657.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/root/llvm/clang/bin/clang --target=aarch64-linux-gnu --sysroot=/root/rootfs   -v -MD -MT CMakeFiles/cmTC_e4657.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_e4657.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_e4657.dir/CMakeCCompilerABI.c.o -c /root/cmake/share/cmake-3.21/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang version 14.0.0 (https://github.com/llvm/llvm-project/ b5e470aa2e978a0ee6276b9564f85cf170ae260d)]
+  ignore line: [Target: aarch64-unknown-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /root/llvm/clang/bin]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/7]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/7.3.0]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/8]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/8.0.1]
+  ignore line: [Selected GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [ (in-process)]
+  ignore line: [ "/root/llvm/clang/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=non-leaf -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu generic -target-feature +neon -target-abi aapcs -fallow-half-arguments-and-returns -debugger-tuning=gdb -v -fcoverage-compilation-dir=/root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp -resource-dir /root/llvm/clang/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_e4657.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_e4657.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /root/rootfs -internal-isystem /root/llvm/clang/lib/clang/14.0.0/include -internal-isystem /root/rootfs/usr/local/include -internal-isystem /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../aarch64-linux-gnu/include -internal-externc-isystem /root/rootfs/usr/include/aarch64-linux-gnu -internal-externc-isystem /root/rootfs/include -internal-externc-isystem /root/rootfs/usr/include -fdebug-compilation-dir=/root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e4657.dir/CMakeCCompilerABI.c.o -x c /root/cmake/share/cmake-3.21/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 14.0.0 based upon LLVM 14.0.0git default target x86_64-unknown-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/root/rootfs/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../aarch64-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/root/rootfs/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /root/llvm/clang/lib/clang/14.0.0/include]
+  ignore line: [ /root/rootfs/usr/include/aarch64-linux-gnu]
+  ignore line: [ /root/rootfs/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_e4657]
+  ignore line: [/root/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4657.dir/link.txt --verbose=1]
+  ignore line: [/root/llvm/clang/bin/clang --target=aarch64-linux-gnu --sysroot=/root/rootfs  -v CMakeFiles/cmTC_e4657.dir/CMakeCCompilerABI.c.o -o cmTC_e4657 ]
+  ignore line: [clang version 14.0.0 (https://github.com/llvm/llvm-project/ b5e470aa2e978a0ee6276b9564f85cf170ae260d)]
+  ignore line: [Target: aarch64-unknown-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /root/llvm/clang/bin]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/7]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/7.3.0]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/8]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/8.0.1]
+  ignore line: [Selected GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  link line: [ "/usr/bin/aarch64-linux-gnu-ld" --sysroot=/root/rootfs -EL -z relro --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /lib/ld-linux-aarch64.so.1 -o cmTC_e4657 /root/rootfs/usr/lib/aarch64-linux-gnu/crt1.o /root/rootfs/usr/lib/aarch64-linux-gnu/crti.o /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/crtbegin.o -L/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0 -L/root/rootfs/lib/aarch64-linux-gnu -L/root/rootfs/lib/../lib64 -L/root/rootfs/usr/lib/aarch64-linux-gnu -L/root/rootfs/lib -L/root/rootfs/usr/lib CMakeFiles/cmTC_e4657.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/crtend.o /root/rootfs/usr/lib/aarch64-linux-gnu/crtn.o]
+    arg [/usr/bin/aarch64-linux-gnu-ld] ==> ignore
+    arg [--sysroot=/root/rootfs] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [aarch64linux] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_e4657] ==> ignore
+    arg [/root/rootfs/usr/lib/aarch64-linux-gnu/crt1.o] ==> obj [/root/rootfs/usr/lib/aarch64-linux-gnu/crt1.o]
+    arg [/root/rootfs/usr/lib/aarch64-linux-gnu/crti.o] ==> obj [/root/rootfs/usr/lib/aarch64-linux-gnu/crti.o]
+    arg [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/crtbegin.o] ==> obj [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/crtbegin.o]
+    arg [-L/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0] ==> dir [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0]
+    arg [-L/root/rootfs/lib/aarch64-linux-gnu] ==> dir [/root/rootfs/lib/aarch64-linux-gnu]
+    arg [-L/root/rootfs/lib/../lib64] ==> dir [/root/rootfs/lib/../lib64]
+    arg [-L/root/rootfs/usr/lib/aarch64-linux-gnu] ==> dir [/root/rootfs/usr/lib/aarch64-linux-gnu]
+    arg [-L/root/rootfs/lib] ==> dir [/root/rootfs/lib]
+    arg [-L/root/rootfs/usr/lib] ==> dir [/root/rootfs/usr/lib]
+    arg [CMakeFiles/cmTC_e4657.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/crtend.o] ==> obj [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/crtend.o]
+    arg [/root/rootfs/usr/lib/aarch64-linux-gnu/crtn.o] ==> obj [/root/rootfs/usr/lib/aarch64-linux-gnu/crtn.o]
+  collapse library dir [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0] ==> [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0]
+  collapse library dir [/root/rootfs/lib/aarch64-linux-gnu] ==> [/root/rootfs/lib/aarch64-linux-gnu]
+  collapse library dir [/root/rootfs/lib/../lib64] ==> [/root/rootfs/lib64]
+  collapse library dir [/root/rootfs/usr/lib/aarch64-linux-gnu] ==> [/root/rootfs/usr/lib/aarch64-linux-gnu]
+  collapse library dir [/root/rootfs/lib] ==> [/root/rootfs/lib]
+  collapse library dir [/root/rootfs/usr/lib] ==> [/root/rootfs/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/root/rootfs/usr/lib/aarch64-linux-gnu/crt1.o;/root/rootfs/usr/lib/aarch64-linux-gnu/crti.o;/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/crtbegin.o;/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/crtend.o;/root/rootfs/usr/lib/aarch64-linux-gnu/crtn.o]
+  implicit dirs: [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0;/root/rootfs/lib/aarch64-linux-gnu;/root/rootfs/lib64;/root/rootfs/usr/lib/aarch64-linux-gnu;/root/rootfs/lib;/root/rootfs/usr/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c3f58/fast && /usr/bin/make  -f CMakeFiles/cmTC_c3f58.dir/build.make CMakeFiles/cmTC_c3f58.dir/build
+make[1]: Entering directory '/root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c3f58.dir/CMakeCXXCompilerABI.cpp.o
+/root/llvm/clang/bin/clang++ --target=aarch64-linux-gnu --sysroot=/root/rootfs   -v -MD -MT CMakeFiles/cmTC_c3f58.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_c3f58.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_c3f58.dir/CMakeCXXCompilerABI.cpp.o -c /root/cmake/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp
+clang version 14.0.0 (https://github.com/llvm/llvm-project/ b5e470aa2e978a0ee6276b9564f85cf170ae260d)
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /root/llvm/clang/bin
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/7
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/7.3.0
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/8
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/8.0.1
+Selected GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/root/llvm/clang/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=non-leaf -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu generic -target-feature +neon -target-abi aapcs -fallow-half-arguments-and-returns -debugger-tuning=gdb -v -fcoverage-compilation-dir=/root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp -resource-dir /root/llvm/clang/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_c3f58.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_c3f58.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /root/rootfs -internal-isystem /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../include/c++/6.4.0 -internal-isystem /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../include/aarch64-linux-gnu/c++/6.4.0 -internal-isystem /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../include/c++/6.4.0/backward -internal-isystem /root/llvm/clang/lib/clang/14.0.0/include -internal-isystem /root/rootfs/usr/local/include -internal-isystem /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../aarch64-linux-gnu/include -internal-externc-isystem /root/rootfs/usr/include/aarch64-linux-gnu -internal-externc-isystem /root/rootfs/include -internal-externc-isystem /root/rootfs/usr/include -fdeprecated-macro -fdebug-compilation-dir=/root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_c3f58.dir/CMakeCXXCompilerABI.cpp.o -x c++ /root/cmake/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/root/rootfs/usr/local/include"
+ignoring nonexistent directory "/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../aarch64-linux-gnu/include"
+ignoring nonexistent directory "/root/rootfs/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../include/c++/6.4.0
+ /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../include/aarch64-linux-gnu/c++/6.4.0
+ /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../include/c++/6.4.0/backward
+ /root/llvm/clang/lib/clang/14.0.0/include
+ /root/rootfs/usr/include/aarch64-linux-gnu
+ /root/rootfs/usr/include
+End of search list.
+Linking CXX executable cmTC_c3f58
+/root/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3f58.dir/link.txt --verbose=1
+/root/llvm/clang/bin/clang++ --target=aarch64-linux-gnu --sysroot=/root/rootfs  -v CMakeFiles/cmTC_c3f58.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c3f58 
+clang version 14.0.0 (https://github.com/llvm/llvm-project/ b5e470aa2e978a0ee6276b9564f85cf170ae260d)
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /root/llvm/clang/bin
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/7
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/7.3.0
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/8
+Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/8.0.1
+Selected GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/usr/bin/aarch64-linux-gnu-ld" --sysroot=/root/rootfs -EL -z relro --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /lib/ld-linux-aarch64.so.1 -o cmTC_c3f58 /root/rootfs/usr/lib/aarch64-linux-gnu/crt1.o /root/rootfs/usr/lib/aarch64-linux-gnu/crti.o /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/crtbegin.o -L/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0 -L/root/rootfs/lib/aarch64-linux-gnu -L/root/rootfs/lib/../lib64 -L/root/rootfs/usr/lib/aarch64-linux-gnu -L/root/rootfs/lib -L/root/rootfs/usr/lib CMakeFiles/cmTC_c3f58.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/crtend.o /root/rootfs/usr/lib/aarch64-linux-gnu/crtn.o
+make[1]: Leaving directory '/root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../include/c++/6.4.0]
+    add: [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../include/aarch64-linux-gnu/c++/6.4.0]
+    add: [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../include/c++/6.4.0/backward]
+    add: [/root/llvm/clang/lib/clang/14.0.0/include]
+    add: [/root/rootfs/usr/include/aarch64-linux-gnu]
+    add: [/root/rootfs/usr/include]
+  end of search list found
+  collapse include dir [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../include/c++/6.4.0] ==> [/root/rootfs/usr/include/c++/6.4.0]
+  collapse include dir [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../include/aarch64-linux-gnu/c++/6.4.0] ==> [/root/rootfs/usr/include/aarch64-linux-gnu/c++/6.4.0]
+  collapse include dir [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../include/c++/6.4.0/backward] ==> [/root/rootfs/usr/include/c++/6.4.0/backward]
+  collapse include dir [/root/llvm/clang/lib/clang/14.0.0/include] ==> [/root/llvm/clang/lib/clang/14.0.0/include]
+  collapse include dir [/root/rootfs/usr/include/aarch64-linux-gnu] ==> [/root/rootfs/usr/include/aarch64-linux-gnu]
+  collapse include dir [/root/rootfs/usr/include] ==> [/root/rootfs/usr/include]
+  implicit include dirs: [/root/rootfs/usr/include/c++/6.4.0;/root/rootfs/usr/include/aarch64-linux-gnu/c++/6.4.0;/root/rootfs/usr/include/c++/6.4.0/backward;/root/llvm/clang/lib/clang/14.0.0/include;/root/rootfs/usr/include/aarch64-linux-gnu;/root/rootfs/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_c3f58/fast && /usr/bin/make  -f CMakeFiles/cmTC_c3f58.dir/build.make CMakeFiles/cmTC_c3f58.dir/build]
+  ignore line: [make[1]: Entering directory '/root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_c3f58.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/root/llvm/clang/bin/clang++ --target=aarch64-linux-gnu --sysroot=/root/rootfs   -v -MD -MT CMakeFiles/cmTC_c3f58.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_c3f58.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_c3f58.dir/CMakeCXXCompilerABI.cpp.o -c /root/cmake/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang version 14.0.0 (https://github.com/llvm/llvm-project/ b5e470aa2e978a0ee6276b9564f85cf170ae260d)]
+  ignore line: [Target: aarch64-unknown-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /root/llvm/clang/bin]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/7]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/7.3.0]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/8]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/8.0.1]
+  ignore line: [Selected GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [ (in-process)]
+  ignore line: [ "/root/llvm/clang/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=non-leaf -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu generic -target-feature +neon -target-abi aapcs -fallow-half-arguments-and-returns -debugger-tuning=gdb -v -fcoverage-compilation-dir=/root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp -resource-dir /root/llvm/clang/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_c3f58.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_c3f58.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /root/rootfs -internal-isystem /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../include/c++/6.4.0 -internal-isystem /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../include/aarch64-linux-gnu/c++/6.4.0 -internal-isystem /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../include/c++/6.4.0/backward -internal-isystem /root/llvm/clang/lib/clang/14.0.0/include -internal-isystem /root/rootfs/usr/local/include -internal-isystem /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../aarch64-linux-gnu/include -internal-externc-isystem /root/rootfs/usr/include/aarch64-linux-gnu -internal-externc-isystem /root/rootfs/include -internal-externc-isystem /root/rootfs/usr/include -fdeprecated-macro -fdebug-compilation-dir=/root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_c3f58.dir/CMakeCXXCompilerABI.cpp.o -x c++ /root/cmake/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 14.0.0 based upon LLVM 14.0.0git default target x86_64-unknown-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/root/rootfs/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../aarch64-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/root/rootfs/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../include/c++/6.4.0]
+  ignore line: [ /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../include/aarch64-linux-gnu/c++/6.4.0]
+  ignore line: [ /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/../../../../include/c++/6.4.0/backward]
+  ignore line: [ /root/llvm/clang/lib/clang/14.0.0/include]
+  ignore line: [ /root/rootfs/usr/include/aarch64-linux-gnu]
+  ignore line: [ /root/rootfs/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking CXX executable cmTC_c3f58]
+  ignore line: [/root/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3f58.dir/link.txt --verbose=1]
+  ignore line: [/root/llvm/clang/bin/clang++ --target=aarch64-linux-gnu --sysroot=/root/rootfs  -v CMakeFiles/cmTC_c3f58.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c3f58 ]
+  ignore line: [clang version 14.0.0 (https://github.com/llvm/llvm-project/ b5e470aa2e978a0ee6276b9564f85cf170ae260d)]
+  ignore line: [Target: aarch64-unknown-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /root/llvm/clang/bin]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/7]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/7.3.0]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/8]
+  ignore line: [Found candidate GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/8.0.1]
+  ignore line: [Selected GCC installation: /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  link line: [ "/usr/bin/aarch64-linux-gnu-ld" --sysroot=/root/rootfs -EL -z relro --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /lib/ld-linux-aarch64.so.1 -o cmTC_c3f58 /root/rootfs/usr/lib/aarch64-linux-gnu/crt1.o /root/rootfs/usr/lib/aarch64-linux-gnu/crti.o /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/crtbegin.o -L/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0 -L/root/rootfs/lib/aarch64-linux-gnu -L/root/rootfs/lib/../lib64 -L/root/rootfs/usr/lib/aarch64-linux-gnu -L/root/rootfs/lib -L/root/rootfs/usr/lib CMakeFiles/cmTC_c3f58.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/crtend.o /root/rootfs/usr/lib/aarch64-linux-gnu/crtn.o]
+    arg [/usr/bin/aarch64-linux-gnu-ld] ==> ignore
+    arg [--sysroot=/root/rootfs] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [aarch64linux] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_c3f58] ==> ignore
+    arg [/root/rootfs/usr/lib/aarch64-linux-gnu/crt1.o] ==> obj [/root/rootfs/usr/lib/aarch64-linux-gnu/crt1.o]
+    arg [/root/rootfs/usr/lib/aarch64-linux-gnu/crti.o] ==> obj [/root/rootfs/usr/lib/aarch64-linux-gnu/crti.o]
+    arg [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/crtbegin.o] ==> obj [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/crtbegin.o]
+    arg [-L/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0] ==> dir [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0]
+    arg [-L/root/rootfs/lib/aarch64-linux-gnu] ==> dir [/root/rootfs/lib/aarch64-linux-gnu]
+    arg [-L/root/rootfs/lib/../lib64] ==> dir [/root/rootfs/lib/../lib64]
+    arg [-L/root/rootfs/usr/lib/aarch64-linux-gnu] ==> dir [/root/rootfs/usr/lib/aarch64-linux-gnu]
+    arg [-L/root/rootfs/lib] ==> dir [/root/rootfs/lib]
+    arg [-L/root/rootfs/usr/lib] ==> dir [/root/rootfs/usr/lib]
+    arg [CMakeFiles/cmTC_c3f58.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/crtend.o] ==> obj [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/crtend.o]
+    arg [/root/rootfs/usr/lib/aarch64-linux-gnu/crtn.o] ==> obj [/root/rootfs/usr/lib/aarch64-linux-gnu/crtn.o]
+  collapse library dir [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0] ==> [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0]
+  collapse library dir [/root/rootfs/lib/aarch64-linux-gnu] ==> [/root/rootfs/lib/aarch64-linux-gnu]
+  collapse library dir [/root/rootfs/lib/../lib64] ==> [/root/rootfs/lib64]
+  collapse library dir [/root/rootfs/usr/lib/aarch64-linux-gnu] ==> [/root/rootfs/usr/lib/aarch64-linux-gnu]
+  collapse library dir [/root/rootfs/lib] ==> [/root/rootfs/lib]
+  collapse library dir [/root/rootfs/usr/lib] ==> [/root/rootfs/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/root/rootfs/usr/lib/aarch64-linux-gnu/crt1.o;/root/rootfs/usr/lib/aarch64-linux-gnu/crti.o;/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/crtbegin.o;/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0/crtend.o;/root/rootfs/usr/lib/aarch64-linux-gnu/crtn.o]
+  implicit dirs: [/root/rootfs/usr/lib/gcc/aarch64-linux-gnu/6.4.0;/root/rootfs/lib/aarch64-linux-gnu;/root/rootfs/lib64;/root/rootfs/usr/lib/aarch64-linux-gnu;/root/rootfs/lib;/root/rootfs/usr/lib]
+  implicit fwks: []
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_41893/fast && /usr/bin/make  -f CMakeFiles/cmTC_41893.dir/build.make CMakeFiles/cmTC_41893.dir/build
+make[1]: Entering directory '/root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_41893.dir/CheckIncludeFile.c.o
+/root/llvm/clang/bin/clang --target=aarch64-linux-gnu --sysroot=/root/rootfs    -MD -MT CMakeFiles/cmTC_41893.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_41893.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_41893.dir/CheckIncludeFile.c.o -c /root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_41893
+/root/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41893.dir/link.txt --verbose=1
+/root/llvm/clang/bin/clang --target=aarch64-linux-gnu --sysroot=/root/rootfs CMakeFiles/cmTC_41893.dir/CheckIncludeFile.c.o -o cmTC_41893 
+make[1]: Leaving directory '/root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_34e30/fast && /usr/bin/make  -f CMakeFiles/cmTC_34e30.dir/build.make CMakeFiles/cmTC_34e30.dir/build
+make[1]: Entering directory '/root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_34e30.dir/CheckFunctionExists.c.o
+/root/llvm/clang/bin/clang --target=aarch64-linux-gnu --sysroot=/root/rootfs   -DCHECK_FUNCTION_EXISTS=pthread_create -MD -MT CMakeFiles/cmTC_34e30.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_34e30.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_34e30.dir/CheckFunctionExists.c.o -c /root/cmake/share/cmake-3.21/Modules/CheckFunctionExists.c
+Linking C executable cmTC_34e30
+/root/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34e30.dir/link.txt --verbose=1
+/root/llvm/clang/bin/clang --target=aarch64-linux-gnu --sysroot=/root/rootfs  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_34e30.dir/CheckFunctionExists.c.o -o cmTC_34e30  -lpthread 
+make[1]: Leaving directory '/root/momo/_build/ubuntu-18.04_armv8_jetson_nano/CMakeFiles/CMakeTmp'
+
+
+
