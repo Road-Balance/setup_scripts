@@ -1,0 +1,1 @@
+wss://cobot.center:8267/live/ws/pub?channel=c0dko1upjh69daabh9pg&brate=800&ktime=100
