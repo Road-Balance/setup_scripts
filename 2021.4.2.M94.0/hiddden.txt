@@ -1,1 +1,14 @@
 wss://cobot.center:8267/live/ws/pub?channel=c0dko1upjh69daabh9pg&brate=800&ktime=100
+
+./momo --resolution 1920x1080 --framerate 30 --priority FRAMERATE --hw-mjpeg-decoder=true --insecure --no-audio-device ayame --signaling-url wss://ayame-labo.shiguredo.jp/signaling --channel-id road-balance-test
+
+./momo --resolution 1920x1080 --framerate 30 --priority FRAMERATE --hw-mjpeg-decoder=true --insecure --no-audio-device ayame --signaling-url wss://cobot.center:8267/live/ws/pub?channel=c0dko1upjh69daabh9pg&brate=800&ktime=100
+
+
+./momo --resolution 1920x1080 --framerate 30 --priority FRAMERATE --hw-mjpeg-decoder=true --insecure --no-audio-device ayame --signaling-url wss://cobot.center:8267/live/ws/pub --channel-id c0dko1upjh69daabh9pg
+
+./momo --resolution 1920x1080 --framerate 30 --priority FRAMERATE --hw-mjpeg-decoder=true --insecure --no-audio-device ayame --signaling-url wss://cobot.center:3478 --channel-id c0dko1upjh69daabh9pg
+
+./momo --resolution 1920x1080 --framerate 30 --priority FRAMERATE --hw-mjpeg-decoder=true --insecure --no-audio-device ayame --signaling-url wss://cobot.center:8267/live/ws --channel-id c0dko1upjh69daabh9pg
+
+./momo --resolution 1920x1080 --framerate 30 --priority FRAMERATE --hw-mjpeg-decoder=true --insecure --no-audio-device ayame --signaling-url wss://cobot.center:8267 --channel-id c0dko1upjh69daabh9pg
