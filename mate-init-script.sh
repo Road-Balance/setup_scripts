@@ -5,8 +5,8 @@ SCIPRTPATH=$(dirname "$(readlink -f "$0")")
 case "$1" in
     restart)
         sed -i "/^${SCRIPTPATH}/mate-init-script.sh restart/d" /home/${USER}/.bashrc
-	    sudo apt-get update && sudo apt-get upgrade -y
-	    sudo apt-get install ubuntu-mate-desktop
+	sudo apt-get update && sudo apt-get upgrade -y
+	sudo apt-get install ubuntu-mate-desktop
         ;;
     *)
         echo -e "\n${SCRIPTPATH}/mate-init-script.sh restart" >> /home/${USER}/.bashrc
