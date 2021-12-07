@@ -1,0 +1,36 @@
+
+$ git clone https://github.com/JetsonHacksNano/installROS.git
+$ cd installROS
+$ ./installROS.sh -p ros-melodic-desktop -p ros-melodic-rgbd-launch
+
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src
+catkin_init_workspace
+cd ..
+catkin_make
+
+# Boost
+
+sudo ./bootstrap.sh
+sudo ./b2 install												
+																																						
+# lcm
+cd ~/Downloads
+wget https://github.com/lcm-proj/lcm/archive/refs/tags/v1.4.0.zip
+tar -xf v1.4.0.zip
+
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+
+cd ~/Documents
+git clone https://github.com/Road-Balance/rb_unitree_legged_sdk.git
+mkdir build
+cd build
+cmake ../
+make
+
+
+
